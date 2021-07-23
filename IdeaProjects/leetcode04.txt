@@ -1,0 +1,23 @@
+
+//Leetcode04
+Given two string arrays word1 and word2, return true if the two arrays represent the same string, and false otherwise.
+Ans:
+class Solution {
+    public boolean arrayStringsAreEqual(String[] word1, String[] word2) {
+        String represent1 = "";
+        String represent2 = "";
+        boolean result;
+        for (int i =0; i<word1.length; i++)
+        {
+            represent1+=word1 [i];
+        }
+        for (int i =0; i<word2.length; i++)
+        {
+            represent2+= word2[i];
+        }
+        if (represent1.equals(represent2))
+        {result = true;
+        } else {result = false;}
+        return result;
+}
+}
